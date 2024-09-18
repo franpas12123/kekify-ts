@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-default;
+}
+
+@layer base {
+  html {
+    font-family: nunito, system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .nav ul li {
+    @apply mr-6 font-semibold text-gray-700 hover:text-[#f2f2e7] lg:mr-14 lg:text-lg xl:mr-16;
+  }
+}
+
+.nav ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
